@@ -1,0 +1,104 @@
+/* reset styles */
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    background-color: black;
+  }
+
+/* custom styles */
+header {
+height: 100px;
+width: 100%;
+background-color: rgb(233, 79, 79);
+color: white;
+text-align: center;
+}
+  
+  #grid {
+    height: 100vh;
+    transition: 500ms;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 3px;
+    background: rgb(13, 10, 10);
+  }
+  
+  :where(.left, .center, .right, .bottom-left, .bottom-center, .bottom-right) {
+    background: rgb(10, 9, 9);
+    transition: 300ms;
+  }
+  
+  :where(.left, .center, .right, .bottom-left, .bottom-center, .bottom-right):hover {
+    background: crimson;
+  }
+  
+  #grid:has(.left:hover) {
+    grid-template-columns: 2fr 0.5fr 0.5fr;
+    grid-template-rows: 2fr 1fr;
+  }
+  #grid:has(.bottom-left:hover) {
+    grid-template-columns: 2fr 0.5fr 0.5fr;
+    grid-template-rows: 1fr 2fr;
+  }
+  
+  #grid:has(.center:hover) {
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+    grid-template-rows: 2fr 1fr;
+  }
+
+  #grid:has(.bottom-center:hover) {
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+    grid-template-rows: 1fr 2fr;
+  }
+
+  #grid:has(.right:hover) {
+    grid-template-columns: 0.5fr 0.5fr 2fr;
+    grid-template-rows: 2fr 1fr;
+  }
+
+  #grid:has(.bottom-right:hover) {
+    grid-template-columns: 0.5fr 0.5fr 2fr;
+    grid-template-rows: 1fr 2fr;
+  }
+
+  .left {
+    background-image: url("./image.jpg");
+    background-size: cover;
+  }
+
+  .right {
+    background-image: url("./image2.jpg");
+    background-size: cover;
+  }
+
+  .center {
+    background-image: url("./image3.jpg");
+    background-size: cover;
+  }
+
+  .bottom-left {
+    background-image: url("./image2.jpg");
+    background-size: cover;
+  }
+
+  .bottom-right {
+    background-image: url("./image3.jpg");
+    background-size: cover;
+  }
+
+  .bottom-center {
+    background-image: url("./image.jpg");
+    background-size: cover;
+  }
+  footer {
+    height: 75px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
