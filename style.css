@@ -72,27 +72,27 @@ text-align: center;
   }
 
   .right {
-    background-image: url("./image2.jpg");
+    background-image: url("./TheApls.JPG");
     background-size: cover;
   }
 
   .center {
-    background-image: url("./image3.jpg");
+    background-image: url("./Brians13.01.21.jpg");
     background-size: cover;
   }
 
   .bottom-left {
-    background-image: url("./image2.jpg");
+    background-image: url("./Lizard1.JPG");
     background-size: cover;
   }
 
   .bottom-right {
-    background-image: url("./image3.jpg");
+    background-image: url("./Lizard3.JPG");
     background-size: cover;
   }
 
   .bottom-center {
-    background-image: url("./image.jpg");
+    background-image: url("./StJustCoastal.JPG");
     background-size: cover;
   }
   footer {
