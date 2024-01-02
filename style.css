@@ -11,7 +11,7 @@ body {
 
 /* custom styles */
 header {
-height: 100px;
+height: auto;
 width: 100%;
 background-color: rgb(233, 79, 79);
 color: white;
@@ -73,32 +73,32 @@ text-align: center;
   }
 
   .left {
-    background-image: url("./images/alfonso-scarpa_Standing_DJ.jpg");
+    background-image: url("./images/small_images/alfonso-scarpa_Standing_DJ\ \(Small\).jpg");
     background-size: cover;
   }
 
   .right {
-    background-image: url("./images/eric-ward-DJ-with-crowd-in-front.jpg");
+    background-image: url("./images/small_images/eric-ward-DJ-with-crowd-in-front\ \(Small\).jpg");
     background-size: cover;
   }
 
   .center {
-    background-image: url("./images/gabriel-barletta-DJ_RIG.jpg");
+    background-image: url("./images/small_images/gabriel-barletta-DJ_RIG\ \(Small\).jpg");
     background-size: cover;
   }
 
   .bottom-left {
-    background-image: url("./images/gesphotoss-2-Geek-DJs-with-smoke.jpg");
+    background-image: url("./images/small_images/gesphotoss-2-Geek-DJs-with-smoke\ \(Small\).jpg");
     background-size: cover;
   }
 
   .bottom-right {
-    background-image: url("./images/marcela-laskoski-Purple-DJ-Rig.jpg");
+    background-image: url("./images/small_images/john-fornander-DJ-with-water-behind\ \(Small\).jpg");
     background-size: cover;
   }
 
   .bottom-center {
-    background-image: url("./images/john-fornander-DJ-with-water-behind.jpg");
+    background-image: url("./images/small_images/marcela-laskoski-Purple-DJ-Rig\ \(Small\).jpg");
     background-size: cover;
   }
   footer {
