@@ -73,32 +73,32 @@ text-align: center;
   }
 
   .left {
-    background-image: url("./image.jpg");
+    background-image: url("./images/alfonso-scarpa_Standing_DJ.jpg");
     background-size: cover;
   }
 
   .right {
-    background-image: url("./TheApls.JPG");
+    background-image: url("./images/eric-ward-DJ-with-crowd-in-front.jpg");
     background-size: cover;
   }
 
   .center {
-    background-image: url("./Brians13.01.21.jpg");
+    background-image: url("./images/gabriel-barletta-DJ_RIG.jpg");
     background-size: cover;
   }
 
   .bottom-left {
-    background-image: url("./Lizard1.JPG");
+    background-image: url("./images/gesphotoss-2-Geek-DJs-with-smoke.jpg");
     background-size: cover;
   }
 
   .bottom-right {
-    background-image: url("./Lizard3.JPG");
+    background-image: url("./images/marcela-laskoski-Purple-DJ-Rig.jpg");
     background-size: cover;
   }
 
   .bottom-center {
-    background-image: url("./StJustCoastal.JPG");
+    background-image: url("./images/john-fornander-DJ-with-water-behind.jpg");
     background-size: cover;
   }
   footer {
