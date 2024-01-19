@@ -2,26 +2,26 @@
 *,
 html,
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    height: 100%;
-    background-color: black;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+  background-color: black;
+}
 
 /* custom styles */
 header {
-display: flex;
-flex-direction: column;
-height: auto;
-width: 100%;
-background-color: rgb(233, 79, 79);
-color: white;
-text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  background-color: rgb(233, 79, 79);
+  color: white;
+  text-align: center;
 }
 
 h1 {
-  font-size:52pt;
+  font-size: 52pt;
 }
 
 h2 {
@@ -30,101 +30,113 @@ h2 {
 
 .construction {
   background-image: url("./images/small_images/under_construction.jpg");
-  background-size:100%;
+  background-size: 100%;
   background-repeat: no-repeat;
   height: 40rem;
 }
-  
-  #grid {
-    height: 100vh;
-    transition: 500ms;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 3px;
-    background: rgb(13, 10, 10);
-  }
-  
-  :where(.left, .center, .right, .bottom-left, .bottom-center, .bottom-right) {
-    background: rgb(10, 9, 9);
-    transition: 300ms;
-  }
-  
-  :where(.left, .center, .right, .bottom-left, .bottom-center, .bottom-right):hover {
-    background: crimson;
-  }
-  
-  #grid:has(.left:hover) {
-    grid-template-columns: 2fr 0.5fr 0.5fr;
-    transition: 1s all;
-    grid-template-rows: 2fr 1fr;
-  }
-  #grid:has(.bottom-left:hover) {
-    grid-template-columns: 2fr 0.5fr 0.5fr;
-    transition: 1s all;
-    grid-template-rows: 1fr 2fr;
-  }
-  
-  #grid:has(.center:hover) {
-    grid-template-columns: 0.5fr 2fr 0.5fr;
-    transition: 1s all;
-    grid-template-rows: 2fr 1fr;
-  }
 
-  #grid:has(.bottom-center:hover) {
-    grid-template-columns: 0.5fr 2fr 0.5fr;
-    transition: 1s all;
-    grid-template-rows: 1fr 2fr;
-  }
+#grid {
+  height: 100vh;
+  transition: 500ms;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 3px;
+  background: rgb(13, 10, 10);
+}
 
-  #grid:has(.right:hover) {
-    grid-template-columns: 0.5fr 0.5fr 2fr;
-    transition: 1s all;
-    grid-template-rows: 2fr 1fr;
-  }
+:where(.left, .center, .right, .bottom-left, .bottom-center, .bottom-right) {
+  background: rgb(10, 9, 9);
+  transition: 300ms;
+}
 
-  #grid:has(.bottom-right:hover) {
-    grid-template-columns: 0.5fr 0.5fr 2fr;
-    transition: 1s all;
-    grid-template-rows: 1fr 2fr;
-  }
+:where(.left, .center, .right, .bottom-left, .bottom-center, .bottom-right):hover {
+  background: crimson;
+}
 
-  .left {
-    background-image: url("./images/small_images/helen_angel_scream.jpg");
-    background-size: cover;
-  }
+#grid:has(.left:hover) {
+  grid-template-columns: 2fr 0.5fr 0.5fr;
+  transition: 1s all;
+  grid-template-rows: 2fr 1fr;
+}
 
-  .right {
-    background-image: url("./images/small_images/drinks_cheers.jpg");
-    background-size: cover;
-  }
+#grid:has(.bottom-left:hover) {
+  grid-template-columns: 2fr 0.5fr 0.5fr;
+  transition: 1s all;
+  grid-template-rows: 1fr 2fr;
+}
 
-  .center {
-    background-image: url("./images/small_images/very_small/gabriel-barletta-DJ_RIG\(Phone\).jpg");
-    background-size: cover;
-  }
+#grid:has(.center:hover) {
+  grid-template-columns: 0.5fr 2fr 0.5fr;
+  transition: 1s all;
+  grid-template-rows: 2fr 1fr;
+}
 
-  .bottom-left {
-    background-image: url("./images/small_images/Lizard1\ \(Phone\).JPG");
-    background-size: cover;
-  }
+#grid:has(.bottom-center:hover) {
+  grid-template-columns: 0.5fr 2fr 0.5fr;
+  transition: 1s all;
+  grid-template-rows: 1fr 2fr;
+}
 
-  .bottom-right {
-    background-image: url("./images/small_images/very_small/marcela-laskoski-Purple-DJ-Rig\(Phone\).jpg");
-    background-size: cover;
-  }
+#grid:has(.right:hover) {
+  grid-template-columns: 0.5fr 0.5fr 2fr;
+  transition: 1s all;
+  grid-template-rows: 2fr 1fr;
+}
 
-  .bottom-center {
-    background-image: url("./images/small_images/geometric_flower_small.jpg");
-    background-size: cover;
-  }
-  footer {
-    height: 75px;
-    width: 100%;
-    background-color: black;
-    color: white;
-    text-align: center;
-    font-size: 24pt;
-  }
+#grid:has(.bottom-right:hover) {
+  grid-template-columns: 0.5fr 0.5fr 2fr;
+  transition: 1s all;
+  grid-template-rows: 1fr 2fr;
+}
 
-  
+.left {
+  background-image: url("./images/small_images/helen_angel_scream.jpg");
+  background-size: cover;
+}
+
+.right {
+  background-image: url("./images/small_images/drinks_cheers.jpg");
+  background-size: cover;
+}
+
+.center {
+  background-image: url("./images/small_images/very_small/gabriel-barletta-DJ_RIG\(Phone\).jpg");
+  background-size: cover;
+}
+
+.bottom-left {
+  background-image: url("./images/small_images/Lizard1\ \(Phone\).JPG");
+  background-size: cover;
+}
+
+.bottom-right {
+  background-image: url("./images/small_images/very_small/marcela-laskoski-Purple-DJ-Rig\(Phone\).jpg");
+  background-size: cover;
+}
+
+.bottom-center {
+  background-image: url("./images/small_images/geometric_flower_small.jpg");
+  background-size: cover;
+}
+
+footer {
+  height: 75px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 24pt;
+}
+
+@media only screen and (max-width: 1000px) {
+.construction {
+  height: 25rem;
+}
+}
+
+@media only screen and (max-width: 900px) {
+  .construction {
+    height: 14rem;
+  }
+}
