@@ -57,37 +57,37 @@ h2 {
 #grid:has(.left:hover) {
   grid-template-columns: 2fr 0.5fr 0.5fr;
   transition: 1s all;
-  grid-template-rows: 2fr 1fr;
+  grid-template-rows: 2.8fr 0.2fr;
 }
 
 #grid:has(.bottom-left:hover) {
   grid-template-columns: 2fr 0.5fr 0.5fr;
   transition: 1s all;
-  grid-template-rows: 1fr 2fr;
+  grid-template-rows: 0.2fr 2.8fr;
 }
 
 #grid:has(.center:hover) {
   grid-template-columns: 0.5fr 2fr 0.5fr;
   transition: 1s all;
-  grid-template-rows: 2fr 1fr;
+  grid-template-rows: 2.8fr 0.2fr;
 }
 
 #grid:has(.bottom-center:hover) {
   grid-template-columns: 0.5fr 2fr 0.5fr;
   transition: 1s all;
-  grid-template-rows: 1fr 2fr;
+  grid-template-rows: 0.2fr 2.8fr;
 }
 
 #grid:has(.right:hover) {
   grid-template-columns: 0.5fr 0.5fr 2fr;
   transition: 1s all;
-  grid-template-rows: 2fr 1fr;
+  grid-template-rows: 2.8fr 0.2fr;
 }
 
 #grid:has(.bottom-right:hover) {
   grid-template-columns: 0.5fr 0.5fr 2fr;
   transition: 1s all;
-  grid-template-rows: 1fr 2fr;
+  grid-template-rows: 0.2fr 2.8fr;
 }
 
 .left {
