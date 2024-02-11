@@ -41,6 +41,8 @@ body {
   background-color: #000;
   width: 10rem;
   padding: 20px;
+  border: 1px solid black;
+  box-shadow: 0 6px 40px #e215bc, 0 6px 15px #e714b2!important;
 }
 
 .menu ul {
