@@ -21,14 +21,14 @@ body {
   left: 20px;
   color: #e714b2 !important;
   background-color: #333;
-  height: 30px;
+  height: 50px;
 }
 
 .line {
-  width: 25px;
-  height: 3px;
-  background-color: #fff;
-  margin: 3px 0;
+  width: 100px;
+  height: 5px;
+  background-color: #e714b2;
+  margin: 5px 0;
 }
 
 .menu {
@@ -39,7 +39,7 @@ body {
   top: 60px;
   left: 20px;
   background-color: #333;
-  width: 6rem;
+  width: 10rem;
   padding: 20px;
 }
 
@@ -77,6 +77,15 @@ header {
   align-items: center;
 }
 
+.music-left {
+  background-image: url("./favicon.svg");
+  background-size: cover;
+}
+
+music-right {
+  background-image: url("./favicon.svg");
+}
+
 h1 {
   font-size: 52pt;
   background-color: #333;
@@ -87,12 +96,14 @@ h2 {
   background-color: #333;
 }
 
-.contact-page {}
+/* .contact-page {} */
 
 hr {
-  height: 2px;
+  background-color: #e215bc;
+  color: #e714b2;
+  height: 3px;
   /* box-shadow: 10px 10px 0 12px rgb(237, 64, 185); */
-  box-shadow: 0 6px 40px #e215bc, 0 6px 15px #e714b2;
+  box-shadow: 0 6px 40px #e215bc, 0 6px 15px #e714b2!important;
 }
 
 .text-container {
@@ -163,6 +174,11 @@ hr {
   width: 100%;
   margin-bottom: 2rem;
   /* box-shadow: 0 4px 8px 0 rgba(245, 34, 206, 0.2), 0 6px 20px 0 rgba(240, 29, 223, 0.19); */
+}
+
+.gold-face-img:hover {
+  transform: scale(1.2);
+  transition: transform ease-in-out 0.3s;
 }
 
 .contact-img {
@@ -274,6 +290,7 @@ footer {
 .textmsg {
   display: flex;
   justify-content: space-evenly;
+  margin-top: 2rem;
 }
 
 @keyframes text-spin {
