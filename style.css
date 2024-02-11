@@ -20,7 +20,7 @@ body {
   top: 40px;
   left: 20px;
   color: #e714b2 !important;
-  background-color: #333;
+  background-color: #000;
   height: 50px;
 }
 
@@ -38,7 +38,7 @@ body {
   position: absolute;
   top: 60px;
   left: 20px;
-  background-color: #333;
+  background-color: #000;
   width: 10rem;
   padding: 20px;
 }
@@ -72,7 +72,7 @@ header {
   /* background-color: rgb(233, 79, 79); */
   color: white;
   text-align: center;
-  background-color: #333;
+  background-color: #000;
   padding: 15px;
   align-items: center;
 }
@@ -88,12 +88,12 @@ music-right {
 
 h1 {
   font-size: 52pt;
-  background-color: #333;
+  background-color: #000;
 }
 
 h2 {
   font-size: xx-large;
-  background-color: #333;
+  background-color: #000;
 }
 
 /* .contact-page {} */
@@ -370,7 +370,7 @@ footer {
     position: absolute;
     top: 60px;
     left: 0;
-    background-color: #333;
+    background-color: #000;
     padding: 20px;
     height: fit-content;
     outline: 1px #000;
@@ -378,17 +378,17 @@ footer {
 
   .menu ul {
     margin-top: 20px;
-    background-color: #333;
+    background-color: #000;
   }
 
   .menu li {
     margin: 10px 0;
-    background-color: #333;
+    background-color: #000;
   }
 
   .menu li a {
     font-size: 18px;
-    background-color: #333;
+    background-color: #000;
   }
 
   .menu.active {
@@ -440,6 +440,16 @@ footer {
     /* IE, ms-edge */
   }
 
+  .line {
+    width: 30px;
+    height: 3px;
+    background-color: #e714b2;
+    margin: 3px 0;
+  }
+
+  .hamburger-menu {
+    height:30px;
+  }
 
   .gold-face-img,
   .contact-img {
