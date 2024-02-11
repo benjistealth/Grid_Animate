@@ -80,6 +80,7 @@ header {
 .music-left {
   background-image: url("./favicon.svg");
   background-size: cover;
+  height: 50px;
 }
 
 music-right {
