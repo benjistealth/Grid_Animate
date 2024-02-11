@@ -5,34 +5,175 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  height: 100%;
+  /* height:max-content; */
+  height:100%;
   background-color: black;
+  font-family: sans-serif;
+  width: auto;
 }
 
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  color: #e714b2!important;
+  background-color: #333;
+  height: 30px;
+}
+
+.line {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+}
+
+.menu {
+  /* display: flex; */
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left: 20px;
+  background-color: #333;
+  width: 6rem;
+  padding: 20px;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+} */
 /* custom styles */
 header {
   display: flex;
   flex-direction: column;
-  height: auto;
+  height:max-content;
   width: 100%;
-  background-color: rgb(233, 79, 79);
+  /* background-color: rgb(233, 79, 79); */
   color: white;
   text-align: center;
+  background-color: #333;
+  padding: 15px;
+  align-items: center;
 }
 
 h1 {
   font-size: 52pt;
+  background-color: #333;
 }
 
 h2 {
   font-size: xx-large;
+  background-color: #333;
 }
 
-.construction {
-  background-image: url("./images/small_images/under_construction.jpg");
-  background-size: 100%;
+.contact-page {
+
+}
+
+hr {
+  height: 2px;
+  /* box-shadow: 10px 10px 0 12px rgb(237, 64, 185); */
+  box-shadow: 0 6px 40px #e215bc, 0 6px 15px #e714b2;
+}
+
+.text-container {
+  display: flex;
+  justify-content: space-around;
+  height: 10rem;
+  margin-top: 4rem;
+  background-color: #000;
+}
+
+.connecting-text {
+  height: fit-content;
+  text-align-last: center;
+  color: #e215bc;
+  font-size: xx-large;
+  margin: 3rem;
+
+}
+
+.connecting-text:hover {
+  transition: transform ease-in-out 0.2s;
+  transform: scale(2);
+  /* animation: text-spin infinite 4s linear; */
+  text-shadow: 0 6px 40px #e814ef, 0 6px 15px #542048;
+}
+
+.good-beats-text {
+  height: fit-content;
+  text-align-last: left;
+  color: #e215bc;
+  font-size: xx-large;
+  margin: 3rem;
+}
+
+.good-beats-text:hover {
+  animation: text-spin infinite 4s linear;
+  text-shadow: 0 6px 40px #e814ef, 0 6px 15px #542048;
+}
+
+.together-text {
+  height: fit-content;
+  text-align-last: right;
+  color: #e215bc;
+  font-size: xx-large;
+  margin: 3rem;
+}
+
+.together-text:hover {
+  animation: text-move infinite 0.5s linear;
+  text-shadow: 0 6px 40px #e814ef, 0 6px 15px #542048;
+}
+
+.gold-face-box,
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 1rem;
+  /* height: auto; */
+  /* background-image: url("./images/gold_face.jpg"); */
+}
+
+.gold-face-img {
+  background-position-x: center;
+  background-image: url("./images/gold_face.jpg");
+  background-size: contain;
   background-repeat: no-repeat;
-  height: 40rem;
+  width: 100%;
+  margin-bottom: 2rem;
+  /* box-shadow: 0 4px 8px 0 rgba(245, 34, 206, 0.2), 0 6px 20px 0 rgba(240, 29, 223, 0.19); */
+}
+
+.contact-img {
+  background-position-x: center;
+  background-image: url("./images/small_images/heart-in-hands\ \(Small\).jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  margin-bottom: 2rem;
 }
 
 #grid {
@@ -64,6 +205,7 @@ h2 {
   grid-template-columns: 2fr 0.5fr 0.5fr;
   transition: 1s all;
   grid-template-rows: 0.2fr 2.8fr;
+  margin-bottom: 5rem;
 }
 
 #grid:has(.center:hover) {
@@ -76,6 +218,7 @@ h2 {
   grid-template-columns: 0.5fr 2fr 0.5fr;
   transition: 1s all;
   grid-template-rows: 0.2fr 2.8fr;
+  margin-bottom: 5rem;
 }
 
 #grid:has(.right:hover) {
@@ -88,6 +231,7 @@ h2 {
   grid-template-columns: 0.5fr 0.5fr 2fr;
   transition: 1s all;
   grid-template-rows: 0.2fr 2.8fr;
+  margin-bottom: 5rem;
 }
 
 .left {
@@ -129,50 +273,123 @@ footer {
   font-size: 24pt;
 }
 
-@media only screen and (max-width: 1000px) {
-  .construction {
-    height: 25rem;
+@keyframes text-spin {
+  from {
+    transform: translateX(0rem);
+    transform: rotate(0deg);
+
+  }
+
+  to {
+    transform: translatex(-5rem);
+    transform: rotate(360deg);
+
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .construction {
-    height: 14rem;
+@keyframes text-move {
+  from {
+    transform: translatey(0rem);
   }
+
+  to {
+    transform: translatey(-4rem);
+  }
+}
+
+
+
+
 
   #grid:has(.left:hover) {
     grid-template-columns: 2.8fr 0.1fr 0.1fr;
     transition: 1s all;
     grid-template-rows: 2fr 1fr;
   }
-  
+
   #grid:has(.bottom-left:hover) {
     grid-template-columns: 2.8fr 0.1fr 0.1fr;
     transition: 1s all;
     grid-template-rows: 1fr 2fr;
   }
-  
+
   #grid:has(.center:hover) {
     grid-template-columns: 0.1fr 2.8fr 0.1fr;
     transition: 1s all;
     grid-template-rows: 2fr 1fr;
   }
-  
+
   #grid:has(.bottom-center:hover) {
     grid-template-columns: 0.1fr 2.8fr 0.1fr;
     transition: 1s all;
     grid-template-rows: 1fr 2fr;
   }
-  
+
   #grid:has(.right:hover) {
     grid-template-columns: 0.1fr 0.1fr 2.8fr;
     transition: 1s all;
     grid-template-rows: 2fr 1fr;
   }
-  
+
   #grid:has(.bottom-right:hover) {
     grid-template-columns: 0.1fr 0.1fr 2.8fr;
     transition: 1s all;
     grid-template-rows: 1fr 2fr;
   }
+
+
+
+  @media screen and (max-width: 1920px) {
+    .hamburger-menu {
+      display: flex;
+    }
+  
+    .menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: #333;
+      padding: 20px;
+      height: fit-content;
+      outline: 1px #000;
+    }
+  
+    .menu ul {
+      margin-top: 20px;
+      background-color: #333;
+    }
+  
+    .menu li {
+      margin: 10px 0;
+      background-color: #333;
+    }
+  
+    .menu li a {
+      font-size: 18px;
+      background-color: #333;
+    }
+  
+    .menu.active {
+      display: flex;
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .construction {
+      height: 25rem;
+    }
+    h1 {
+      font-size:x-large;
+    }
+    h2 {
+      font-size: larger;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .construction {
+      height: 14rem;
+    }
 }
