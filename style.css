@@ -489,4 +489,8 @@ footer {
   .contact-img {
     margin: 0;
   }
+
+  .textmsg  {
+    font-size: large;
+  }
 }
