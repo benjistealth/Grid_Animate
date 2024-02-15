@@ -302,6 +302,22 @@ hr {
   background-size: cover;
 }
 
+.page-top-border {
+  height: 5rem;
+}
+
+
+
+.card-img-top {
+  border-radius: 20px;
+  background-size: cover;
+}
+
+.card:hover {
+  transform: scale(1.1)!important;
+  transition: transform ease-in-out 0.3s!important;
+}
+
 footer {
   height: 75px;
   width: 100%;
@@ -448,6 +464,9 @@ footer {
   .hamburger-menu {
     height:30px;
   }
+  .textmsg  {
+    font-size:large;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -491,6 +510,6 @@ footer {
   }
 
   .textmsg  {
-    font-size: large;
+    font-size:medium;
   }
 }
