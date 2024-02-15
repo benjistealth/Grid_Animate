@@ -306,13 +306,6 @@ hr {
   height: 5rem;
 }
 
-
-
-.card-img-top {
-  border-radius: 20px;
-  background-size: cover;
-}
-
 .card:hover {
   transform: scale(1.1)!important;
   transition: transform ease-in-out 0.3s!important;
