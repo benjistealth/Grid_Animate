@@ -1,6 +1,16 @@
 /* reset styles */
 *,
-html,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* height:max-content; */
+  height: 100%;
+  background-color: black;
+  font-family: sans-serif;
+  width: auto;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -105,7 +115,7 @@ header {
   left: 21rem;
 }
 
-music-right {
+.music-right {
   background-image: url("./favicon.svg");
 }
 
@@ -312,7 +322,7 @@ hr {
 }
 
 footer {
-  height: 75px;
+  height: auto;
   width: 100%;
   background-color: black;
   color: white;
@@ -324,6 +334,7 @@ footer {
   display: flex;
   justify-content: space-evenly;
   margin-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 @keyframes text-spin {
