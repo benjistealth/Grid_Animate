@@ -153,13 +153,11 @@ hr {
   color: #e215bc;
   font-size: xx-large;
   margin: 3rem;
-
+  animation: wiggle infinite 1s linear;
 }
 
 .connecting-text:hover {
-  transition: transform ease-in-out 0.2s;
-  transform: scale(2);
-  /* animation: text-spin infinite 4s linear; */
+  animation: text-move infinite 0.5s linear;
   text-shadow: 0 6px 40px #e814ef, 0 6px 15px #542048;
 }
 
@@ -169,10 +167,12 @@ hr {
   color: #e215bc;
   font-size: xx-large;
   margin: 3rem;
+  animation: text-spin infinite 4s linear;
+  text-shadow: 0 6px 40px #e814ef, 0 6px 15px #542048;
 }
 
 .good-beats-text:hover {
-  animation: text-spin infinite 4s linear;
+  animation: wiggle infinite 4s linear;
   text-shadow: 0 6px 40px #e814ef, 0 6px 15px #542048;
 }
 
@@ -182,10 +182,12 @@ hr {
   color: #e215bc;
   font-size: xx-large;
   margin: 3rem;
+  animation: text-move infinite 0.5s linear;
+  text-shadow: 0 6px 40px #e814ef, 0 6px 15px #542048;
 }
 
 .together-text:hover {
-  animation: text-move infinite 0.5s linear;
+  animation: text-spin infinite 0.5s linear;
   text-shadow: 0 6px 40px #e814ef, 0 6px 15px #542048;
 }
 
@@ -354,6 +356,25 @@ footer {
 
   }
 }
+
+@keyframes wiggle {
+  0% {
+      transform: translateX(0);
+  }
+  25% {
+      transform: translateX(-10px);
+  }
+  50% {
+      transform: translateX(10px);
+  }
+  75% {
+      transform: translateX(-10px);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+
 
 @keyframes text-move {
   from {
