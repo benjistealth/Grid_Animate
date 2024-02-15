@@ -446,6 +446,10 @@ footer {
     outline: 1px #000;
   }
 
+  .menu-open {
+    display: block;
+  }
+
   .menu ul {
     margin-top: 20px;
     background-color: #000;
