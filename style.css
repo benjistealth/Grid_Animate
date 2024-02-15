@@ -157,7 +157,7 @@ hr {
 }
 
 .connecting-text:hover {
-  animation: text-move infinite 0.5s linear;
+  animation: text-move infinite 1s linear;
   text-shadow: 0 6px 40px #e814ef, 0 6px 15px #542048;
 }
 
@@ -172,7 +172,7 @@ hr {
 }
 
 .good-beats-text:hover {
-  animation: wiggle infinite 4s linear;
+  animation: wiggle infinite 1s linear;
   text-shadow: 0 6px 40px #e814ef, 0 6px 15px #542048;
 }
 
@@ -182,12 +182,12 @@ hr {
   color: #e215bc;
   font-size: xx-large;
   margin: 3rem;
-  animation: text-move infinite 0.5s linear;
+  animation: text-move infinite 1s linear;
   text-shadow: 0 6px 40px #e814ef, 0 6px 15px #542048;
 }
 
 .together-text:hover {
-  animation: text-spin infinite 0.5s linear;
+  animation: text-spin infinite 3s linear;
   text-shadow: 0 6px 40px #e814ef, 0 6px 15px #542048;
 }
 
