@@ -515,5 +515,6 @@ footer {
 
   .textmsg  {
     font-size:medium;
+    margin-bottom: 1rem;
   }
 }
