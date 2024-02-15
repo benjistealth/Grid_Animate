@@ -189,6 +189,10 @@ hr {
   text-shadow: 0 6px 40px #e814ef, 0 6px 15px #542048;
 }
 
+.card-title {
+  color: #fff;
+}
+
 .gold-face-box,
 .contact-box {
   display: flex;
