@@ -154,6 +154,7 @@ hr {
   font-size: xx-large;
   margin: 3rem;
   animation: wiggle infinite 1s linear;
+  transform-origin: center;
 }
 
 .connecting-text:hover {
