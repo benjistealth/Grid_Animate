@@ -26,6 +26,29 @@
 
 // });
 
+// let rootEvent = document.getElementById("rootElement");
+
+// let burgerNav = document.getElementById(".hamburger-menu");
+
+// burgerNav.addEventListener("click", function(e) {
+//     document.querySelector('.menu').classList.add('active');
+//     burgerNav.style.visibility ='hidden';
+//     e.preventDefault();
+//     e.stopPropagation();
+
+
+// });
+
+// closeNav = function(){
+//     if (burgerNav.style.visibility === "hidden"){
+//        document.querySelector('.menu').classList.remove('open');
+//        burgerNav.style.visibility ='visible';
+//     }
+// };
+
+// rootEvent.addEventListener("click", closeNav);
+// rootEvent.addEventListener("touchend", closeNav);
+
 function toggleMenu() {
     var menu = document.querySelector('.menu');
     

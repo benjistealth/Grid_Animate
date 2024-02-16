@@ -79,7 +79,7 @@ body {
 header {
   display: flex;
   flex-direction: column;
-  height: max-content;
+  height: auto;
   width: 100%;
   /* background-color: rgb(233, 79, 79); */
   color: white;
