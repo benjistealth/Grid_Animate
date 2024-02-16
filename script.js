@@ -26,28 +26,28 @@
 
 // });
 
-// let rootEvent = document.getElementById("rootElement");
-
-// let burgerNav = document.getElementById(".hamburger-menu");
-
-// burgerNav.addEventListener("click", function(e) {
-//     document.querySelector('.menu').classList.add('active');
-//     burgerNav.style.visibility ='hidden';
-//     e.preventDefault();
-//     e.stopPropagation();
-
-
-// });
-
-// closeNav = function(){
-//     if (burgerNav.style.visibility === "hidden"){
-//        document.querySelector('.menu').classList.remove('open');
-//        burgerNav.style.visibility ='visible';
+// document.addEventListener("touchend", function(e) {
+//     if (e.target.id === ".hamburger-menu"){
+//       document.querySelector('nav').classList.add('open');
+//       document.getElementById('.hamburger-menu').style.visibility ='hidden';
+//     } else {
+//       document.querySelector('.menu').classList.remove('open');
+//       document.getElementById('.hamburger-menu').style.visibility ='visible';
 //     }
-// };
+//   });
+  
+//   document.addEventListener("click", function(e) {
+//     if (e.target.id === ".hamburger-menu"){
+//       document.querySelector('.menu').classList.add('open');
+//       document.getElementById('.hamburger-menu').style.visibility ='hidden';
+//     } else {
+//       document.querySelector('.menu').classList.remove('open');
+//       document.getElementById('.hamburger-menu').style.visibility ='visible';
+//     }
+//   });
 
-// rootEvent.addEventListener("click", closeNav);
-// rootEvent.addEventListener("touchend", closeNav);
+
+
 
 function toggleMenu() {
     var menu = document.querySelector('.menu');
