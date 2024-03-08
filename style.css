@@ -638,7 +638,8 @@ footer {
   }
 
   .gold-face-img,
-  .contact-img {
+  .contact-img,
+  .contact-box {
     margin: 0;
     padding: 0;
   }
