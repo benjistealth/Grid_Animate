@@ -179,8 +179,8 @@ hr {
   transform: translate(-50%, -50%);
   z-index: 2;
   border-radius: 5px;
-  filter: drop-shadow(0 0 30px #000);
-  text-shadow: 0 0 .5em #000;
+  filter: drop-shadow(2px 2px 30px #000);
+  text-shadow: 2px 2px 10px black;
   background-color: rgba(0,0,0,0.0);
   height: auto;
   width:max-content;
@@ -195,8 +195,8 @@ hr {
   transform: translate(-50%, -50%);
   z-index: 2;
   border-radius: 5px;
-  filter: drop-shadow(0 0 30px #000);
-  text-shadow: 0 0 .5em #000;
+  filter: drop-shadow(2px 2px 30px #000);
+  text-shadow: 2px 2px 10px black;
   background-color: rgba(0,0,0,0.0);
   height: auto;
   width:max-content;
@@ -212,9 +212,9 @@ hr {
   transform: translate(-50%, -50%);
   z-index: 2;
   border-radius: 5px;
-  filter: drop-shadow(0 0 30px #000);
-  text-shadow: 0 0 .5em #000;
-  background-color: rgba(0,0,0,0.2);
+  filter: drop-shadow(2px 2px 30px #000);
+  text-shadow: 2px 2px 10px black;
+  background-color: rgba(0,0,0,0.0);
   height: auto;
   font-size: 69pt;
   width:max-content;
