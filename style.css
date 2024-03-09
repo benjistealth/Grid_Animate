@@ -643,7 +643,19 @@ footer {
   .gold-face-img {
     margin: 0;
     padding: 0;
+    background-size:contain;
   }
+
+.gold-face-box {
+  height: 100svh;
+}
+
+.face-text-container {
+  height: 50svh;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+}
 
   .contact-img,
   .contact-box {
