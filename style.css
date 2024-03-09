@@ -640,11 +640,14 @@ footer {
     height: 30px;
   }
 
-  .gold-face-img,
-  .contact-img,
-  .contact-box {
+  .gold-face-img {
     margin: 0;
     padding: 0;
+  }
+
+  .contact-img,
+  .contact-box {
+    height: 40svh;
   }
 
   .textmsg {
