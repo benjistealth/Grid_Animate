@@ -1,4 +1,3 @@
-/* reset styles */
 *,
 html {
   margin: 0;
@@ -85,7 +84,7 @@ body {
   flex-direction: column;
   width: 100%;
 } */
-/* custom styles */
+
 header {
   display: flex;
   flex-direction: column;
@@ -139,8 +138,6 @@ h2 {
   background-color: #000;
 }
 
-/* .contact-page {} */
-
 hr {
   background-color: #e215bc;
   color: #e714b2;
@@ -162,7 +159,7 @@ hr {
   flex-direction: column;
   align-items: space-around;
   margin-top: 4rem;
-  background-color: #b59f81;
+  /* background-color: #b59f81; */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -182,7 +179,9 @@ hr {
   transform: translate(-50%, -50%);
   z-index: 2;
   border-radius: 5px;
-  /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); */
+  filter: drop-shadow(0 0 30px #000);
+  text-shadow: 0 0 .5em #000;
+  background-color: rgba(0,0,0,0.0);
   height: auto;
   width:max-content;
   font-size: 69pt;
@@ -196,7 +195,9 @@ hr {
   transform: translate(-50%, -50%);
   z-index: 2;
   border-radius: 5px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  filter: drop-shadow(0 0 30px #000);
+  text-shadow: 0 0 .5em #000;
+  background-color: rgba(0,0,0,0.0);
   height: auto;
   width:max-content;
   font-size: 69pt;
@@ -211,7 +212,9 @@ hr {
   transform: translate(-50%, -50%);
   z-index: 2;
   border-radius: 5px;
-  /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); */
+  filter: drop-shadow(0 0 30px #000);
+  text-shadow: 0 0 .5em #000;
+  background-color: rgba(0,0,0,0.2);
   height: auto;
   font-size: 69pt;
   width:max-content;
