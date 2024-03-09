@@ -238,6 +238,7 @@ hr {
 .djs {
   height: fit-content;
   text-align-last: left;
+  width: 7rem;
   color: #e215bc;
   font-size: xx-large;
   margin: 3rem;
@@ -668,5 +669,20 @@ footer {
   }
   .text-container  {
     display: inline-block;
+    justify-content: center;
+    align-items: center;
+  }
+
+.live-bands {
+  margin-left: 5rem;
+}
+
+  .djs {
+    text-align: center;
+    margin-left: 8rem;
+  }
+
+  .dancing {
+    margin-left: 5rem;
   }
 }
