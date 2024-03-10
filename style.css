@@ -673,16 +673,8 @@ footer {
     align-items: center;
   }
 
-.live-bands {
-  margin-left: 5rem;
-}
-
   .djs {
     text-align: center;
     margin-left: 8rem;
-  }
-
-  .dancing {
-    margin-left: 5rem;
   }
 }
