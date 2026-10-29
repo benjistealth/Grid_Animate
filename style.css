@@ -335,10 +335,10 @@ hr {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  max-width: 90rem;
+  width: 90%;
   height: auto;
   margin: 0 auto;
-  padding: 0 2rem 10rem;
+  padding: 0 0 10rem;
 }
 
 .gallery .col,
@@ -361,6 +361,7 @@ hr {
 @media (orientation: portrait) {
   .gallery {
     grid-template-columns: repeat(2, 1fr);
+    width: auto;
     gap: 1rem;
     padding: 0 1rem 8rem;
   }
