@@ -185,7 +185,7 @@ hr {
 .live-bands {
   height: fit-content;
   text-align-last: center;
-  color: #e215bc;
+  color: #39ff14;
   font-size: xx-large;
   margin: 3rem;
   animation: wiggle infinite 1s linear;
@@ -194,7 +194,7 @@ hr {
 
 .live-bands:hover {
   animation: text-move infinite 1s linear;
-  text-shadow: 0 6px 40px #e814ef, 0 6px 15px #542048;
+  text-shadow: 0 0.4rem 2.5rem #39ff14, 0 0.4rem 1rem #0b5d1e;
 }
 
 .djs {
@@ -202,31 +202,31 @@ hr {
   place-items: center;
   width: 11rem;
   height: 11rem;
-  color: #e215bc;
+  color: #39ff14;
   font-size: xx-large;
   margin: 3rem;
   animation: text-spin infinite 4s linear;
-  text-shadow: 0 6px 40px #e814ef, 0 6px 15px #542048;
+  text-shadow: 0 0.4rem 2.5rem #39ff14, 0 0.4rem 1rem #0b5d1e;
 }
 
 .djs:hover {
   animation: wiggle infinite 1s linear;
-  text-shadow: 0 6px 40px #e814ef, 0 6px 15px #542048;
+  text-shadow: 0 0.4rem 2.5rem #39ff14, 0 0.4rem 1rem #0b5d1e;
 }
 
 .dancing {
   height: fit-content;
   text-align-last: right;
-  color: #e215bc;
+  color: #39ff14;
   font-size: xx-large;
   margin: 3rem;
   animation: text-move infinite 1s linear;
-  text-shadow: 0 6px 40px #e814ef, 0 6px 15px #542048;
+  text-shadow: 0 0.4rem 2.5rem #39ff14, 0 0.4rem 1rem #0b5d1e;
 }
 
 .dancing:hover {
   animation: text-spin infinite 3s linear;
-  text-shadow: 0 6px 40px #e814ef, 0 6px 15px #542048;
+  text-shadow: 0 0.4rem 2.5rem #39ff14, 0 0.4rem 1rem #0b5d1e;
 }
 
 /* Graphics sit behind each word as ::before, so they move with the word's animation */
@@ -256,7 +256,6 @@ hr {
 .live-bands::before {
   width: 13rem;
   height: 8rem;
-  opacity: 0.45;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 100' fill='none' stroke='%23e215bc' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M30 50c-7 0-11 6-9 12-8 3-11 11-7 18 4 8 16 9 22 3 6-6 6-14 1-18 4-6 1-15-7-15z'/%3E%3Ccircle cx='29' cy='70' r='3'/%3E%3Cpath d='M32 54 52 14M48 10l8 4-3 6-8-4z'/%3E%3Ccircle cx='80' cy='70' r='22'/%3E%3Ccircle cx='80' cy='70' r='6'/%3E%3Cellipse cx='80' cy='36' rx='14' ry='5'/%3E%3Cpath d='M66 36v9a14 5 0 0 0 28 0v-9'/%3E%3Cellipse cx='112' cy='26' rx='14' ry='3' transform='rotate(-10 112 26)'/%3E%3Cpath d='M112 26v66M104 94l8-8 8 8'/%3E%3Crect x='134' y='22' width='10' height='16' rx='5'/%3E%3Cpath d='M139 38v54M131 94l8-6 8 6'/%3E%3C/svg%3E");
 }
 
@@ -275,7 +274,6 @@ hr {
   width: calc(100% + 3rem);
   height: 5rem;
   transform: translate(-50%, -75%);
-  opacity: 0.6;
   background-size: 100% 100%;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 42' preserveAspectRatio='none'%3E%3Cpath d='M2 6Q100 34 198 6' fill='none' stroke='%23b59f81' stroke-width='1.5'/%3E%3Cpath fill='%23e215bc' d='M13.6 11h16l-8 20zM91.9 20h16l-8 20zM170.4 11h16l-8 20z'/%3E%3Cpath fill='%23b59f81' d='M33.2 15h16l-8 20zM111.6 19.4h16l-8 20z'/%3E%3Cpath fill='%239b3fd1' d='M52.8 17.8h16l-8 20zM131.2 17.8h16l-8 20zM150.8 15h16l-8 20z'/%3E%3Cpath fill='%23e215bc' d='M72.4 19.4h16l-8 20z'/%3E%3C/svg%3E");
 }
