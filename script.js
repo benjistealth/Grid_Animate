@@ -20,7 +20,7 @@ function closeMenu(){
   }
   function closeMenuOnBodyClick(event){
     const path = event.composedPath();
-    if (path.some(elem => elem.id === 'menu')) {
+    if (path.some(elem => elem.id === 'menu' || elem.id === 'menu-button')) {
       return;
     }
     closeMenu();
@@ -39,7 +39,7 @@ function openImage(img) {
   const viewer = document.createElement('div');
   viewer.className = 'image-viewer';
   viewer.innerHTML = '<img>';
-  viewer.firstChild.src = img.src;
+  viewer.firstChild.src = img.dataset.full || img.src;
   viewer.firstChild.alt = img.alt;
   viewer.addEventListener('click', closeImage);
   document.body.appendChild(viewer);

@@ -1,49 +1,75 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en-GB">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <html lang="en" dir="ltr" id="rootElement">
+    <title>Out Of House - DJs, Live Bands and Event Decoration Across the UK</title>
+    <meta name="description"
+        content="Out Of House Music Promotions - DJs, live bands and event decoration for festivals, parties, gigs, shows and gatherings anywhere in the UK.">
+    <link rel="canonical" href="https://outofhouse.org.uk/">
     <link rel="icon" href="favicon.svg">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <meta name="theme-color" content="#ffffff">
-    <meta name="description"
-        content="Book DJs and other live acts at Out of House Music Promotions outofhouse.online" />
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#000000">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Out Of House Music Promotions">
+    <meta property="og:title" content="Out Of House - DJs, Live Bands and Event Decoration Across the UK">
+    <meta property="og:description"
+        content="DJs, live bands and event decoration for festivals, parties, gigs, shows and gatherings anywhere in the UK.">
+    <meta property="og:url" content="https://outofhouse.org.uk/">
+    <meta property="og:image" content="https://outofhouse.org.uk/images/web/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_GB">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "EntertainmentBusiness",
+        "name": "Out Of House Music Promotions",
+        "alternateName": "Out Of House",
+        "url": "https://outofhouse.org.uk/",
+        "image": "https://outofhouse.org.uk/images/web/og-image.jpg",
+        "logo": "https://outofhouse.org.uk/icon-512.png",
+        "telephone": "+447927034758",
+        "description": "DJs, live bands and event decoration for festivals, parties, gigs, shows and gatherings anywhere in the UK.",
+        "areaServed": { "@type": "Country", "name": "United Kingdom" },
+        "knowsAbout": ["Festivals", "Parties", "Gigs", "Events", "Gatherings", "Shows", "Camping festivals", "Event decoration"],
+        "makesOffer": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "DJ booking" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Live band booking" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Event decoration" } }
+        ]
+    }
+    </script>
     <link rel="stylesheet" href="style.css">
-    <title>Out Of House</title>
-
 </head>
 
-
-<header>
-
-
-    <div class="title-container">
-        <h1>Out Of House</h1>
-        <h2>Music Promotions</h2>
-    </div>
- 
-    <div class="hamburger-menu" id="menu" onclick="openMenu()">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-    </div>
-    <nav class="menu" id="menu" onclick="closeMenu()">
-        <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./image_page.html">Images</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-        </ul>
-    </nav>
- 
-</header>
-<hr>
-</hr>
 <body>
+    <header>
+        <div class="title-container">
+            <h1>Out Of House</h1>
+            <h2>Music Promotions</h2>
+        </div>
+
+        <div class="hamburger-menu" id="menu-button" onclick="openMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="menu" id="menu" onclick="closeMenu()">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./image_page.html">Images</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
 
     <div class="gold-face-box">
-        <div class="gold-face-img" alt="gold metalic face with beard">
+        <div class="gold-face-img" role="img" aria-label="Gold metallic face with a beard">
             <div class="face-text-container">
                 <p class="connecting-text">Connecting All</p>
                 <p class="good-beats-text">Good Beats</p>
@@ -52,20 +78,14 @@
         </div>
     </div>
 
-
-
-
-
+    <hr>
+    <footer>
+        <div class="textmsg">
+            <h3>Text message:<span></span></h3>
+            <h3><a href="sms:+447927034758">07927 034 758</a></h3>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
 </body>
-<hr>
-</hr>
-<footer>
-
-    <div class="textmsg">
-        <h3>Text message:<span></span></h3>
-        <h3>07927 034 758</h3>
-    </div>
-</footer>
-<script src="./script.js"></script>
 
 </html>
