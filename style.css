@@ -113,7 +113,8 @@ hr {
 .text-container {
   display: flex;
   justify-content: space-around;
-  height: 10rem;
+  align-items: center;
+  height: auto;
   margin-top: 4rem;
   background-color: #000;
 }
@@ -197,9 +198,10 @@ hr {
 }
 
 .djs {
-  height: fit-content;
-  text-align-last: left;
-  width: 7rem;
+  display: grid;
+  place-items: center;
+  width: 11rem;
+  height: 11rem;
   color: #e215bc;
   font-size: xx-large;
   margin: 3rem;
@@ -225,6 +227,57 @@ hr {
 .dancing:hover {
   animation: text-spin infinite 3s linear;
   text-shadow: 0 6px 40px #e814ef, 0 6px 15px #542048;
+}
+
+/* Graphics sit behind each word as ::before, so they move with the word's animation */
+.live-bands,
+.djs,
+.dancing {
+  position: relative;
+  isolation: isolate;
+  background-color: transparent;
+  white-space: nowrap;
+}
+
+.live-bands::before,
+.djs::before,
+.dancing::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.live-bands::before {
+  width: 13rem;
+  height: 8rem;
+  opacity: 0.45;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 100' fill='none' stroke='%23e215bc' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M30 50c-7 0-11 6-9 12-8 3-11 11-7 18 4 8 16 9 22 3 6-6 6-14 1-18 4-6 1-15-7-15z'/%3E%3Ccircle cx='29' cy='70' r='3'/%3E%3Cpath d='M32 54 52 14M48 10l8 4-3 6-8-4z'/%3E%3Ccircle cx='80' cy='70' r='22'/%3E%3Ccircle cx='80' cy='70' r='6'/%3E%3Cellipse cx='80' cy='36' rx='14' ry='5'/%3E%3Cpath d='M66 36v9a14 5 0 0 0 28 0v-9'/%3E%3Cellipse cx='112' cy='26' rx='14' ry='3' transform='rotate(-10 112 26)'/%3E%3Cpath d='M112 26v66M104 94l8-8 8 8'/%3E%3Crect x='134' y='22' width='10' height='16' rx='5'/%3E%3Cpath d='M139 38v54M131 94l8-6 8 6'/%3E%3C/svg%3E");
+}
+
+.djs::before {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-image:
+    radial-gradient(circle, #1a0616 0 33%, #e215bc 33% 35%, transparent 35%),
+    conic-gradient(from 20deg, transparent 0 8%, rgb(255 255 255 / 0.18) 12%, transparent 16% 50%, rgb(255 255 255 / 0.18) 62%, transparent 66%),
+    repeating-radial-gradient(circle, #0b0b0b 0 0.12rem, #262626 0.12rem 0.24rem);
+  box-shadow: 0 0 2rem rgb(226 21 188 / 0.35);
+}
+
+.dancing::before {
+  width: calc(100% + 3rem);
+  height: 5rem;
+  transform: translate(-50%, -75%);
+  opacity: 0.6;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 42' preserveAspectRatio='none'%3E%3Cpath d='M2 6Q100 34 198 6' fill='none' stroke='%23b59f81' stroke-width='1.5'/%3E%3Cpath fill='%23e215bc' d='M13.6 11h16l-8 20zM91.9 20h16l-8 20zM170.4 11h16l-8 20z'/%3E%3Cpath fill='%23b59f81' d='M33.2 15h16l-8 20zM111.6 19.4h16l-8 20z'/%3E%3Cpath fill='%239b3fd1' d='M52.8 17.8h16l-8 20zM131.2 17.8h16l-8 20zM150.8 15h16l-8 20z'/%3E%3Cpath fill='%23e215bc' d='M72.4 19.4h16l-8 20z'/%3E%3C/svg%3E");
 }
 
 .contact-info {
@@ -278,6 +331,67 @@ hr {
 .card:hover {
   transform: scale(1.1) !important;
   transition: transform ease-in-out 0.3s !important;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 90rem;
+  height: auto;
+  margin: 0 auto;
+  padding: 0 2rem 10rem;
+}
+
+.gallery .col,
+.gallery .card-body,
+.gallery .card-title {
+  height: auto;
+}
+
+.gallery .card {
+  height: 100%;
+}
+
+.gallery .card-img-top {
+  aspect-ratio: 4 / 3;
+  height: auto;
+  object-fit: cover;
+  cursor: zoom-in;
+}
+
+@media (orientation: portrait) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 0 1rem 8rem;
+  }
+
+  .gallery .card-body {
+    padding: 0.5rem;
+  }
+
+  .gallery .card-title {
+    font-size: 0.95rem;
+    margin: 0;
+  }
+}
+
+.image-viewer {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  cursor: zoom-out;
+}
+
+.image-viewer img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 footer {
@@ -482,14 +596,42 @@ footer {
     margin-bottom: 1rem;
   }
 
+}
+
+@media (orientation: portrait) {
   .text-container {
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .live-bands,
+  .djs,
+  .dancing {
+    margin: 1.5rem auto;
+  }
+}
+
+/* Phone landscape: short screen, so shrink the three words and their graphics to fit one row */
+@media (orientation: landscape) and (max-height: 31.25rem) {
+  .text-container {
+    margin-top: 2rem;
+  }
+
+  .live-bands,
+  .djs,
+  .dancing {
+    font-size: x-large;
+    margin: 2rem 1rem;
   }
 
   .djs {
-    text-align: center;
-    margin-left: 8rem;
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .live-bands::before {
+    width: 10rem;
+    height: 6rem;
   }
 }
